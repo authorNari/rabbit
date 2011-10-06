@@ -31,6 +31,7 @@ piyo
 piyo
 
 = スクリプトモードのテスト(2)
+hoge
 
 == Note
 ほげ
@@ -40,5 +41,5 @@ piyo
 ふげ
 
 == p
-:color
-  red
+: color
+  green

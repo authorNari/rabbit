@@ -103,11 +103,10 @@ module Rabbit
             @slide
           when 2
             if title.first.text == "Note"
-              NoteSetter.new(slide)
+              NoteSetter.new(@slides.last)
             else
-              SlidePropertySetter.new(slide)
+              SlidePropertySetter.new(@slides.last)
             end
-            @slide
           else
             nil
           end
