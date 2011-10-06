@@ -11,37 +11,34 @@
 * ほげ
 * (('wait'))piyo
 
-== p
-:note
-  ほげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげ\n
-  <click>\n
-  piyo\n
-  piyo\n
-  piyo\n
-  piyo\n
-  piyo\n
-  piyo\n
-  piyo\n
-  piyo\n
-  piyo\n
-  piyo\n
-  piyo\n
-  piyo\n
-  piyo\n
-  piyo\n
-  piyo\n
-  piyo\n
-  piyo\n
-  piyo\n
-  piyo\n
-  piyo\n
+== Note
+ほげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげげ
+
+<click>
+
+piyo
+
+piyo
+
+piyo
+
+piyo
+
+piyo
+
+piyo
+
+piyo
 
 = スクリプトモードのテスト(2)
-* ほげ
-* fuge
+
+== Note
+ほげ
+
+<click>
+
+ふげ
 
 == p
-:note
-  ほげ\n
-  <click>\n
-  ふげ\n
+:color
+  red
