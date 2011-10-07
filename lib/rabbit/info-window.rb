@@ -142,29 +142,29 @@ module Rabbit
     end
 
     def init_widgets_on_note_mode(width, height)
-      init_timer_label(width * (1.0 / 5.0), height * (1.0 / 3.0))
-      init_note_text(width * (5.0 / 5.0), height * (2.0 / 3.0))
+      init_timer_label(width * (1.0 / 5.0), height * (2.0 / 5.0))
+      init_note_text(width * (5.0 / 5.0), height * (3.0 / 5.0))
       @outer_box = Gtk::VBox.new
 
       current_box = Gtk::HBox.new
       current_box.pack_start(@timer_label, false, false)
       @previous_canvas.attach_to(nil, @window, current_box) do |container, widget|
-        widget.set_size_request(width * (1.0 / 5.0), height * (1.0 / 3.0))
-        container.pack_start(widget, true, false, 10)
+        widget.set_size_request(width * (1.0 / 5.0), height * (2.0 / 5.0))
+        container.pack_start(widget, true, true, 10)
       end
       @current_canvas.attach_to(nil, @window, current_box) do |container, widget|
-        widget.set_size_request(width * (2.0 / 5.0), height * (1.0 / 3.0))
-        container.pack_start(widget, true, false)
+        widget.set_size_request(width * (2.0 / 5.0), height * (2.0 / 5.0))
+        container.pack_start(widget, true, true)
       end
       @next_canvas.attach_to(nil, @window, current_box) do |container, widget|
-        widget.set_size_request(width * (1.0 / 5.0), height * (1.0 / 3.0))
-        container.pack_end(widget, true, false, 10)
+        widget.set_size_request(width * (1.0 / 5.0), height * (2.0 / 5.0))
+        container.pack_end(widget, true, true, 10)
       end
       @outer_box.pack_start(current_box, false, false)
 
       bottom_box = Gtk::HBox.new
-      bottom_box.pack_start(@note_label, false, false, 10)
-      @outer_box.pack_end(bottom_box, true, false)
+      bottom_box.pack_start(@note_label, false, true, 20)
+      @outer_box.pack_start(bottom_box, true, false)
 
       @outer_box.show
     end
